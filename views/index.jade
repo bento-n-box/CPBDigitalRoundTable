@@ -1,0 +1,57 @@
+doctype 5
+html(lang="en")
+	head
+		meta(charset='utf-8', content='en_US')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+		meta(name='description', content='Sample App')
+	
+		meta(property='og:site_name', content='Sample App')
+		meta(property='og:title', content='Sample App') 
+		meta(property='og:description', content='Sample App')
+		meta(property='og:url', content='Sample App')
+		meta(property='og:image', content='Sample App')
+		meta(property='og:type', content='website')
+		meta(property='og:locale', content='en_US')
+		block headLinks			
+			link(rel='shortcut icon', href='images/favicon.ico')
+			link(rel='stylesheet', href='/stylesheets/style.css')
+	
+	body
+		#main
+			header
+				canvas#canvas
+					h1 digital dojo presentation series
+				nav#bt-menu.bt-menu
+					a.bt-menu-trigger(href="#", class="bt-menu-trigger")
+						span Menu
+					ul
+						li
+							a.bt-icon icon-zoom 
+				
+				div.bt-overlay
+			#container
+				#wrapper
+					h2#desc A monthly tech series for collaboration, learning, and just simply building cool shit.
+					#upcoming
+						h3 Upcoming Events
+						ul
+							li 
+								h3 Intro to WebGL – Jason Schertz
+								p WebGL is a JavaScript API that allows us to implement interactive 3D graphics, straight in the browser.  
+								span.lecture
+								span.voteup
+								span.votedown
+
+							li 
+								h3 API Hackfest – Gary Gamble
+								p Leverage your favorite data and making something cool. An application programming interface (API) specifies how some software components should interact with each other.
+							li
+								h3 Web to Physical – Pablo Alejo 
+								p Using Rasberry Pi and Arduino. Open-source electronic prototyping platform allowing to create interactive electronic objects.
+								
+	block headScripts	
+			script( src='http://code.jquery.com/jquery-latest.min.js')
+			script( src='javascripts/canvas.js')
+
+
