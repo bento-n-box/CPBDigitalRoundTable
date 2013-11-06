@@ -45,7 +45,7 @@ function Banner(){
 
 		bgContext.font = '100px texas_ledregular';
 		bgContext.textAlign = 'center';
-		bgContext.fillText(keyword, canvas.width/2.1, 120);
+		bgContext.fillText(keyword, canvas.width/2, 120);
 		console.log(canvas.width/2)
 		clear();	
 		getCoords();
