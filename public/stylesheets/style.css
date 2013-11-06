@@ -121,10 +121,12 @@ canvas {
   display: block;
   position: relative;
   width: 90%;
-h3
+}
+#wrapper h3 {
   color: #3fa757;
 }
 #wrapper h4 {
+  color: #666;
   font-size: 16px;
   font-weight: lighter;
 }
