@@ -23,7 +23,7 @@ function Banner(){
 		context = canvas.getContext('2d');
 		
 		canvas.width = window.innerWidth;
-		canvas.height = 200;
+		canvas.height = 250;
 		
 		bgCanvas = document.createElement('canvas');
 		bgContext = bgCanvas.getContext('2d');
