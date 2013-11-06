@@ -8,14 +8,23 @@ a {
   color: #00b7ff;
   text-decoration: none;
 }
+h1,
+h2,
+h3 {
+  font-family: Courier, serif;
+}
+h4,
+h5,
+h6,
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
 h1 {
-  font-family: "FuturaStd-Bold";
   font-size: 42px;
   color: #444;
 }
 p {
   color: #999;
-  font-family: "FuturaStd-Medium";
   font-size: 22px;
 }
 ul {
@@ -24,8 +33,8 @@ ul {
 header {
   background: #000;
 }
-header h2{
-  color: #18CAE6;
+header h2 {
+  color: #18cae6;
   font-family: Courier;
   font-size: 18px;
   font-weight: lighter;
@@ -35,15 +44,16 @@ header h2{
   width: 100%;
 }
 canvas {
+  height: 250px;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 #container {
   position: relative;
   padding: 40px 0 40 0px 0;
   border-top: 8px solid #3fa757;
 }
-
 .bt-menu-trigger {
   cursor: pointer;
 }
@@ -84,29 +94,23 @@ canvas {
 .bt-menu.bt-menu-open {
   height: 100%;
   border-width: 30px 30px 30px 90px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: 0.3s;
   -webkit-transition: border-width 0.3s;
-  background-color: 0.3s;
   transition: border-width 0.3s;
-  background-color: 0.3s;
 }
 .bt-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 0;
+  height: 0s 0.3s;
   border-width: 0px;
   border-style: solid;
   border-color: #333;
-  background-color: rgba(0,0,0,0);
+  background-color: 0.3s;
   -webkit-backface-visibility: hidden;
   -webkit-transition: border-width 0.3s;
-  background-color: 0.3s;
-  height: 0s 0.3s;
   transition: border-width 0.3s;
-  background-color: 0.3s;
-  height: 0s 0.3s;
   z-index: 99;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -117,23 +121,22 @@ canvas {
   display: block;
   position: relative;
   width: 90%;
+h3
+  color: #3fa757;
+}
+#wrapper h4 {
+  font-size: 16px;
+  font-weight: lighter;
 }
 #desc {
-  font-family: Courier;
   padding: 10px 20px;
   margin: 20px auto 0;
-  border-top: 1px solid rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
   display: inline-block;
-}
-#wrapper h3 {
-  font-family: "FuturaStd-Bold";
-  color: #3fa757;
 }
 #upcoming {
   text-align: left;
   margin: 50px 0;
-
 }
 #upcoming ul {
   margin: 0 auto;
@@ -144,20 +147,17 @@ canvas {
 #upcoming h3,
 #upcoming h4 {
   text-decoration: uppercase;
-  /*font-family: 'FuturaStd-Medium';*/
   font-family: Courier;
 }
 #upcoming h3 {
-  /*font-family: 'FuturaStd-Medium';*/
   font-size: 24px;
-  color: #18CAE6;
+  color: #18cae6;
   margin: 0 0 40px 0;
 }
 #upcoming ul h3 {
   color: #444;
   font-size: 18px;
   margin: 0 0 6px 0;
-  /*font-family: 'FuturaStd-Bold';*/
 }
 #upcoming h4 {
   color: #444;
@@ -178,24 +178,25 @@ canvas {
   line-height: 24px;
   color: #666;
   font-size: 14px;
-  /*width: 600px;*/
 }
-.date{
+.date {
   border: 5px solid #3fa757;
   font-family: Courier;
   display: inline-block;
   float: left;
   line-height: 14px;
   margin: 5px 25px 15px 0;
+  padding: 5px;
   text-align: center;
-  width: 50px;
+  width: 45px;
 }
-.month{
+.month {
   font-size: 14px;
   font-weight: bold;
   display: block;
+  margin: -5px 0 0;
 }
-.day{
+.day {
   font-size: 28px;
   font-weight: lighter;
   display: block;
@@ -209,41 +210,17 @@ canvas {
   background-position: 0 -50px no-repeat;
   height: 50px;
 }
-
-footer{
+footer {
   background: #0f0f0f;
   border-top: 8px solid #3fa757;
   margin: 50px 0 0;
   padding: 20px 0;
   width: 100%;
 }
-footer p{
-  color: #18CAE6;
+footer p {
+  color: #18cae6;
   font-family: courier;
   font-size: 14px;
   text-align: center;
   padding: 40px 0;
-}
-
-@font-face {
-  font-family: 'texas_ledregular';
-  src: url("../webfonts/texasled-webfont.eot");
-  src: url("../webfonts/texasled-webfont.eot?#iefix") format('embedded-opentype'), url("../webfonts/texasled-webfont.woff") format('woff'), url("../webfonts/texasled-webfont.ttf") format('truetype'), url("../webfonts/texasled-webfont.svg#texas_ledregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'FuturaStd-Bold';
-  src: url("../webfonts/278A02_0_0.eot");
-  src: url("../webfonts/278A02_0_0.eot?#iefix") format('embedded-opentype'), url("../webfonts/278A02_0_0.woff") format('woff'), url("../webfonts/278A02_0_0.ttf") format('truetype');
-}
-@font-face {
-  font-family: 'FuturaStd-Medium';
-  src: url("../webfonts/278A02_1_0.eot");
-  src: url("../webfonts/278A02_1_0.eot?#iefix") format('embedded-opentype'), url("../webfonts/278A02_1_0.woff") format('woff'), url("../webfonts/278A02_1_0.ttf") format('truetype');
-}
-@font-face {
-  font-family: 'FuturaStd-Heavy';
-  src: url("../webfonts/278A02_2_0.eot");
-  src: url("../webfonts/278A02_2_0.eot?#iefix") format('embedded-opentype'), url("../webfonts/278A02_2_0.woff") format('woff'), url("../webfonts/278A02_2_0.ttf") format('truetype');
 }
