@@ -8,14 +8,18 @@ a
   color: #00b7ff
   text-decoration: none
 
+h1, h2, h3
+  font-family Courier, serif
+
+h4, h5, h6, p
+  font-family Helvetica, Arial, sans-serif
+
 h1
-  font-family: "FuturaStd-Bold"
   font-size: 42px
   color: #444
 
 p
   color: #999
-  font-family: "FuturaStd-Medium"
   font-size: 22px
 
 ul
@@ -35,8 +39,10 @@ header h2
   width: 100%
 
 canvas
+  height 250px
   margin: 0
   padding: 0
+  width 100%
 
 #container
   position: relative
@@ -111,21 +117,27 @@ canvas
   position: relative
   width: 90%
 
+  h3
+    color: #3fa757
+
+  h4
+    color #666
+    font-size 16px
+    font-weight lighter
+
 #desc
-  font-family: Courier
   padding: 10px 20px
   margin: 20px auto 0
-  border-top: 1px solid rgba(0,0,0,0.1)
   border-bottom: 1px solid rgba(0,0,0,0.1)
   display: inline-block
-
-#wrapper h3
-  font-family: "FuturaStd-Bold"
-  color: #3fa757
 
 #upcoming
   text-align: left
   margin: 50px 0
+
+  a
+    color #666
+    text-decoration underline
 
 #upcoming ul
   margin: 0 auto
@@ -175,13 +187,15 @@ canvas
   float: left
   line-height: 14px
   margin: 5px 25px 15px 0
+  padding 5px
   text-align: center
-  width: 50px
+  width: 45px
 
 .month
   font-size: 14px
   font-weight: bold
   display: block
+  margin -5px 0 0
 
 .day
   font-size: 28px
